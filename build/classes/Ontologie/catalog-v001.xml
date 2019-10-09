@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1560718947534" name="http://w3id.org/MI" uri="MI.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1560718947534" name="http://w3id.org/Sport" uri="Sport.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1560718947534" name="http://w3id.org/s3n/" uri="s3n.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1560718947534" name="http://w3id.org/s3n/S3NAlgorithm" uri="S3NAlgorithm.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1560718947534" name="http://w3id.org/s3n/S3NCore" uri="S3NCore.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1560718947534" name="http://w3id.org/s3n/S3NDatasheet" uri="S3NDatasheet.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1560718947534" name="http://w3id.org/s3n/S3NProcedure" uri="S3NProcedure.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1560718947534" name="http://w3id.org/s3n/S3NSystem" uri="S3NSystem.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1560718947534" name="http://w3id.org/s3n/s3ndul" uri="s3ndul.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1560718947534" name="http://w3id.org/sms/" uri="sms.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1560718947534" name="http://w3id.org/sportdul" uri="sportdul.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1560718947534" name="http://www.semanticweb.org/owl/owlapi/turtle" uri="Dataset.owl"/>
+    </group>
+</catalog>

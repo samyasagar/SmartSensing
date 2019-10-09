@@ -1,0 +1,431 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY schema "http://schema.org/" >
+    <!ENTITY sport "http://w3id.org/Sport/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY time "http://www.w3.org/2006/time#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY voaf "http://purl.org/vocommons/voaf#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://w3id.org/Sport#"
+     xml:base="http://w3id.org/Sport"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:sport="http://w3id.org/Sport/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://w3id.org/Sport">
+        <dcterms:created>2018</dcterms:created>
+        <dcterms:creator>SAGAR Samya -  Lab-STICC (imt-atlantique)</dcterms:creator>
+        <dcterms:title xml:lang="en">Sport Ontology: Sport Module of SMS Ontology</dcterms:title>
+        <vann:preferredNamespacePrefix>sport</vann:preferredNamespacePrefix>
+        <dcterms:description xml:lang="en">This ontology describes the sport activities.</dcterms:description>
+        <vann:preferredNamespaceUri>http://w3id.org/Sport/</vann:preferredNamespaceUri>
+        <owl:imports rdf:resource="http://w3id.org/MI"/>
+        <dcterms:license rdf:resource="https://www.apache.org/licenses/LICENSE-2.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+    <owl:AnnotationProperty rdf:about="&schema;domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+    <owl:AnnotationProperty rdf:about="&schema;rangeIncludes"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="&skos;definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="&skos;example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="&skos;note"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="&foaf;name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/Sport#forSport -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/Sport#forSport">
+        <rdfs:label>for sport</rdfs:label>
+        <skos:definition>A relation between some performance indicator  and a sport.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/Sport#hasDuration -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/Sport#hasDuration">
+        <rdfs:label>has duration</rdfs:label>
+        <skos:definition>A relation between some physical activity  and a duration.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/Sport#hasPerformanceIndicator -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/Sport#hasPerformanceIndicator">
+        <rdfs:label>has PerformanceIndicator</rdfs:label>
+        <skos:definition>Relationship between a sporting practice and its performance indicators.</skos:definition>
+        <schema:rangeIncludes rdf:resource="http://w3id.org/MI#PerformanceIndicator"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+        <schema:domainIncludes rdf:resource="http://w3id.org/Sport#SportingPractice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/Sport#hasPhysicalActivity -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/Sport#hasPhysicalActivity">
+        <rdfs:label>has PhysicalActivity</rdfs:label>
+        <skos:definition>Relationship between a sporting practice and its physical activities.</skos:definition>
+        <schema:rangeIncludes rdf:resource="http://w3id.org/Sport#PhysicalActivity"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+        <schema:domainIncludes rdf:resource="http://w3id.org/Sport#SportingPractice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/Sport#isPracticedin -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/Sport#isPracticedin">
+        <rdfs:label>is practiced in</rdfs:label>
+        <skos:definition>A relation between some sporting practice and a sport.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+        <schema:rangeIncludes rdf:resource="http://w3id.org/Sport#Sport"/>
+        <schema:domainIncludes rdf:resource="http://w3id.org/Sport#SportingPractice"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/Sport#hasPerformanceIndicator"/>
+            <rdf:Description rdf:about="http://w3id.org/Sport#forSport"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+    <owl:Class rdf:about="&voaf;Vocabulary"/>
+    
+
+
+    <!-- http://w3id.org/MI#PerformanceIndicator -->
+
+    <rdf:Description rdf:about="http://w3id.org/MI#PerformanceIndicator">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/Sport#forSport"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/Sport#Sport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://w3id.org/Sport#CollectiveSport -->
+
+    <owl:Class rdf:about="http://w3id.org/Sport#CollectiveSport">
+        <rdfs:label>Collective Sport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/Sport#Sport"/>
+        <skos:definition>Sport that opposes teams between them.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/Sport#Competition -->
+
+    <owl:Class rdf:about="http://w3id.org/Sport#Competition">
+        <rdfs:label>Competition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/Sport#SportingPractice"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/Sport#Duration -->
+
+    <owl:Class rdf:about="http://w3id.org/Sport#Duration">
+        <rdfs:label>Duration</rdfs:label>
+        <skos:definition>Space of time that elapses between the beginning and the end.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/Sport#IndividualSport -->
+
+    <owl:Class rdf:about="http://w3id.org/Sport#IndividualSport">
+        <rdfs:label>Individual Sport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/Sport#Sport"/>
+        <skos:definition>Sport that opposes individuals.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/Sport#Indoor -->
+
+    <owl:Class rdf:about="http://w3id.org/Sport#Indoor">
+        <rdfs:label>Indoor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/Sport#Locale"/>
+        <skos:definition>Closed geographical area.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/Sport#Locale -->
+
+    <owl:Class rdf:about="http://w3id.org/Sport#Locale">
+        <rdfs:label>Locale</rdfs:label>
+        <skos:definition>Geographic space.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/Sport#Outdoor -->
+
+    <owl:Class rdf:about="http://w3id.org/Sport#Outdoor">
+        <rdfs:label>Outdoor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/Sport#Locale"/>
+        <skos:definition>Open space</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/Sport#PhysicalActivity -->
+
+    <owl:Class rdf:about="http://w3id.org/Sport#PhysicalActivity">
+        <rdfs:label>Physical Activity</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/Sport#hasDuration"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/Sport#Duration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>Set of body movements produced by the activation of skeletal muscles.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/Sport#PhysicalPreparation -->
+
+    <owl:Class rdf:about="http://w3id.org/Sport#PhysicalPreparation">
+        <rdfs:label>Physical Preparation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/Sport#SportingPractice"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/Sport#Sport -->
+
+    <owl:Class rdf:about="http://w3id.org/Sport#Sport">
+        <rdfs:label>Sport</rdfs:label>
+        <skos:definition>Any type of exercise or physical activity aimed at achieving a performance.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/Sport#SportingPractice -->
+
+    <owl:Class rdf:about="http://w3id.org/Sport#SportingPractice">
+        <rdfs:label>Sporting Practice</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/Sport#hasPhysicalActivity"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/Sport#PhysicalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/Sport#isPracticedin"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/Sport#Sport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/Sport#hasPhysicalActivity"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/Sport#PhysicalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/Sport#hasPerformanceIndicator"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/MI#PerformanceIndicator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>A sport can be exercised under different practices such
+training, competition, etc.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/Sport#Training -->
+
+    <owl:Class rdf:about="http://w3id.org/Sport#Training">
+        <rdfs:label>Training</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/Sport#SportingPractice"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/Sport#SMSSport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="&time;TemporalEntity"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="&foaf;Agent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/Sport#SMSSport -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/Sport#SMSSport">
+        <rdf:type rdf:resource="&voaf;Vocabulary"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

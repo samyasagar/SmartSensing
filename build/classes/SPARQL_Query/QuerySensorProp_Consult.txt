@@ -1,0 +1,18 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX qudt-1-1: <http://qudt.org/1.1/schema/qudt#> 
+PREFIX qudt-unit-1-1: <http://qudt.org/1.1/vocab/unit#> 
+PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> 
+PREFIX s3n: <http://w3id.org/s3n/>
+PREFIX ssn-system: <http://www.w3.org/ns/ssn/systems/>
+PREFIX db: <http://example.org/data/> 
+SELECT  ?prop
+	WHERE { 
+db:%s ssn:hasSubSystem ?sensor.
+?sensor rdf:type sosa:Sensor.
+?sensor sosa:observes ?prop.
+}

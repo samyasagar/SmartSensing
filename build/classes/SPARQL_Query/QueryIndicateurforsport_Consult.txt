@@ -1,0 +1,18 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
+PREFIX mi: <http://w3id.org/MI/> 
+PREFIX s3n: <http://w3id.org/s3n/> 
+PREFIX sport: <http://w3id.org/Sport/> 
+PREFIX db: <http://example.org/data/> 
+
+SELECT Distinct ?performanceindicator  
+	WHERE { ?pr rdf:type           sport:SportingPractice. 
+?pr sport:hasPerformanceIndicator  ?performanceindicator.
+ ?pr  sport:isPracticedin db:%s.
+?performanceindicator rdf:type mi:PerformanceIndicator.		
+	}
+          ORDER BY ASC (?performanceindicator) 

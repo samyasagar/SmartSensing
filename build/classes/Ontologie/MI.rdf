@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY schema "http://schema.org/" >
+    <!ENTITY mi "http://w3id.org/MI/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY time "http://www.w3.org/2006/time#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY voaf "http://purl.org/vocommons/voaf#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://w3id.org/MI#"
+     xml:base="http://w3id.org/MI"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:mi="http://w3id.org/MI/">
+    <owl:Ontology rdf:about="http://w3id.org/MI">
+        <dcterms:created>2018</dcterms:created>
+        <vann:preferredNamespaceUri>http://w3id.org/MI/</vann:preferredNamespaceUri>
+        <vann:preferredNamespacePrefix>MI</vann:preferredNamespacePrefix>
+        <dcterms:title xml:lang="en">Measurement and Indicator (MI) Ontology: Measurement and Indicator Module of SMS Ontology</dcterms:title>
+        <dcterms:creator>SAGAR Samya -  Lab-STICC (imt-atlantique)</dcterms:creator>
+        <dcterms:description xml:lang="en">This ontology describes the Measurements and Indicators.</dcterms:description>
+        <dcterms:license rdf:resource="https://www.apache.org/licenses/LICENSE-2.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+    <owl:AnnotationProperty rdf:about="&schema;domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+    <owl:AnnotationProperty rdf:about="&schema;rangeIncludes"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="&skos;definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="&skos;example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="&skos;note"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="&foaf;name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+    <owl:Class rdf:about="&voaf;Vocabulary"/>
+    
+
+
+    <!-- http://w3id.org/MI#Indicator -->
+
+    <owl:Class rdf:about="http://w3id.org/MI#Indicator">
+        <rdfs:label>Indicator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/MI#PerformanceIndicator"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/MI#Measurement"/>
+        <skos:definition>It is all data resulting from a calculation. It is a derivative of the treatment of one or more measures and / or indicators that makes sense for a person or persons depending on his or their activities. It is used to assess a situation and help to make a decision.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/MI#SMSMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/MI#Measurement -->
+
+    <owl:Class rdf:about="http://w3id.org/MI#Measurement">
+        <rdfs:label>Measurement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/MI#PerformanceIndicator"/>
+        <skos:definition>It is a data produced by a sensor following a detection procedure. Any value of a measurement is described in a specific unit. Physical value returned by a sensor in a measurement unit.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/MI#SMSMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/MI#PerformanceIndicator -->
+
+    <owl:Class rdf:about="http://w3id.org/MI#PerformanceIndicator">
+        <rdfs:label>Performance Indicator</rdfs:label>
+        <skos:definition>This concept groups all the measured or calculated qualities.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/MI#SMSMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="&time;TemporalEntity"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="&foaf;Agent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/MI#SMSMI -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/MI#SMSMI"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

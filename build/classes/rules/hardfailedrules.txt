@@ -1,0 +1,20 @@
+@prefix sosa: <http://www.w3.org/ns/sosa#>.
+@prefix ssn: <http://www.w3.org/ns/ssn#>.
+@prefix s3n: <http://w3id.org/s3n#>.
+@prefix conf: <http://w3id.org/Configuration#>.
+
+[ReconfigSmartImpractical: (?smart rdf:type s3n:SmartSensor) (?sensor rdf:type sosa:Sensor)
+
+ (?smart ssn:hasSubSystem ?sensor)
+
+(?sensor sosa:observes ?ObservableProperty)
+
+(?algo rdf:type s3n:Algorithm)
+
+(?algo s3n:hasPreCondition ?precondition)
+
+(?conf conf:isAlgorithmOf ?algo)
+
+notEqual (?ObservableProperty, ?precondition)
+
+-> (?conf rdf:type conf:ConfigImpractical) (?smart conf:hasConfiguration ?conf)]
