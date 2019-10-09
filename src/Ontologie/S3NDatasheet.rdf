@@ -1,0 +1,469 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY schema "http://schema.org/" >
+    <!ENTITY s3n "http://w3id.org/s3n/" >
+    <!ENTITY ssn "http://www.w3.org/ns/ssn/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY sosa "http://www.w3.org/ns/sosa/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY time "http://www.w3.org/2006/time#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY voaf "http://purl.org/vocommons/voaf#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&s3n;S3NDatasheet#"
+     xml:base="&s3n;S3NDatasheet"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:ssn="http://www.w3.org/ns/ssn/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:sosa="http://www.w3.org/ns/sosa/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:s3n="http://w3id.org/s3n/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="&s3n;S3NDatasheet">
+        <dcterms:created rdf:datatype="&xsd;date">2018</dcterms:created>
+        <vann:preferredNamespacePrefix>s3n</vann:preferredNamespacePrefix>
+        <dcterms:creator>SAGAR Samya -  Lab-STICC (imt-atlantique)</dcterms:creator>
+        <dcterms:description xml:lang="en">This ontology extends the S3NCore ontology to describe Datasheet of Sensors.</dcterms:description>
+        <vann:preferredNamespaceUri>http://w3id.org/s3n/</vann:preferredNamespaceUri>
+        <dcterms:title xml:lang="en">Semantic Smart Sensor Network (S3N) Ontology: Datasheet Module</dcterms:title>
+        <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <dcterms:license rdf:resource="https://www.apache.org/licenses/LICENSE-2.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+    <owl:AnnotationProperty rdf:about="&schema;domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+    <owl:AnnotationProperty rdf:about="&schema;rangeIncludes"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="&skos;definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="&skos;example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="&skos;note"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="&foaf;name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/s3n/forMeasurand -->
+
+    <owl:ObjectProperty rdf:about="&s3n;forMeasurand">
+        <rdfs:label>for measurand</rdfs:label>
+        <skos:definition>Relation between a sensor reference and the measurement that describes.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+        <schema:domainIncludes rdf:resource="&s3n;SensorReference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/hasMaxValue -->
+
+    <owl:ObjectProperty rdf:about="&s3n;hasMaxValue">
+        <rdfs:label>has MaxValue</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/hasMinValue -->
+
+    <owl:ObjectProperty rdf:about="&s3n;hasMinValue">
+        <rdfs:label>has MinValue</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/hasSensorReference -->
+
+    <owl:ObjectProperty rdf:about="&s3n;hasSensorReference">
+        <rdfs:label>has sensor reference</rdfs:label>
+        <skos:definition>Relation between a sensor is its reference</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+        <schema:rangeIncludes rdf:resource="&s3n;SensorReference"/>
+        <schema:domainIncludes rdf:resource="&sosa;Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/hasSymbol -->
+
+    <owl:ObjectProperty rdf:about="&s3n;hasSymbol">
+        <rdfs:label>has symbol</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/inParameterCondition -->
+
+    <owl:ObjectProperty rdf:about="&s3n;inParameterCondition">
+        <rdfs:label>in parameter condition</rdfs:label>
+        <skos:definition>Describes the prevailing environmental conditions for ParameterCapabilites.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/isComposedof -->
+
+    <owl:ObjectProperty rdf:about="&s3n;isComposedof">
+        <rdfs:label>is composed of</rdfs:label>
+        <skos:definition>Relation between an entity and its descriptive constituents.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/s3n/hasDatasheetURL -->
+
+    <owl:DatatypeProperty rdf:about="&s3n;hasDatasheetURL">
+        <rdfs:label>has datasheet URL</rdfs:label>
+        <skos:definition>link to the pdf document or web page of the reference darasheet.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+        <schema:domainIncludes rdf:resource="&s3n;SensorReference"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/hasNameReference -->
+
+    <owl:DatatypeProperty rdf:about="&s3n;hasNameReference">
+        <rdfs:label>has name reference</rdfs:label>
+        <skos:definition>link with the name of reference</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+        <schema:domainIncludes rdf:resource="&s3n;SensorReference"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+    <owl:Class rdf:about="&voaf;Vocabulary"/>
+    
+
+
+    <!-- http://w3id.org/s3n/MaxValue -->
+
+    <owl:Class rdf:about="&s3n;MaxValue">
+        <rdfs:label>MaxValue</rdfs:label>
+        <skos:definition>Maximum value of a technical indicator in a datasheet.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/Measurand -->
+
+    <owl:Class rdf:about="&s3n;Measurand">
+        <rdfs:label>Measurand</rdfs:label>
+        <skos:definition>This is a measurement that can be detected by the type of sensors referenced in the Datasheet.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/MinValue -->
+
+    <owl:Class rdf:about="&s3n;MinValue">
+        <rdfs:label>MinValue</rdfs:label>
+        <skos:definition>Minimum value of a technical indicator in a datasheet.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/ParameterCapability -->
+
+    <owl:Class rdf:about="&s3n;ParameterCapability">
+        <rdfs:label>Parameter Capability</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;hasSymbol"/>
+                <owl:someValuesFrom rdf:resource="&s3n;Symbol"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;inParameterCondition"/>
+                <owl:allValuesFrom rdf:resource="&s3n;ParameterCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;hasMaxValue"/>
+                <owl:someValuesFrom rdf:resource="&s3n;MaxValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;hasMinValue"/>
+                <owl:someValuesFrom rdf:resource="&s3n;MinValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>Technical indicator in a datasheet.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/ParameterCondition -->
+
+    <owl:Class rdf:about="&s3n;ParameterCondition">
+        <rdfs:label>Parameter Condition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ssn;Property"/>
+        <skos:definition>Environmental condition in which the different values of a capacity parameter are considered.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/SensorReference -->
+
+    <owl:Class rdf:about="&s3n;SensorReference">
+        <rdfs:label>Sensor Reference</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;forMeasurand"/>
+                <owl:onClass rdf:resource="&s3n;Measurand"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;hasNameReference"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;hasDatasheetURL"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;isComposedof"/>
+                <owl:allValuesFrom rdf:resource="&s3n;ParameterCapability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;isComposedof"/>
+                <owl:onClass rdf:resource="&s3n;ParameterCapability"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;forMeasurand"/>
+                <owl:allValuesFrom rdf:resource="&s3n;Measurand"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>Technical reference of a datasheet.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/Symbol -->
+
+    <owl:Class rdf:about="&s3n;Symbol">
+        <rdfs:label>Symbol</rdfs:label>
+        <skos:definition>Graph used to represent a capacity parameter.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NDatasheet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="&time;TemporalEntity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+    <owl:Class rdf:about="&sosa;Sensor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;hasSensorReference"/>
+                <owl:allValuesFrom rdf:resource="&s3n;SensorReference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;hasSensorReference"/>
+                <owl:onClass rdf:resource="&s3n;SensorReference"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/Property -->
+
+    <owl:Class rdf:about="&ssn;Property"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="&foaf;Agent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/s3n/S3NDatasheet -->
+
+    <owl:NamedIndividual rdf:about="&s3n;S3NDatasheet">
+        <rdf:type rdf:resource="&voaf;Vocabulary"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

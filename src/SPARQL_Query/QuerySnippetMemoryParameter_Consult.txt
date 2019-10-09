@@ -1,0 +1,18 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> 
+PREFIX s3n: <http://w3id.org/s3n/>
+PREFIX ssn-system: <http://www.w3.org/ns/ssn/systems/>
+PREFIX db: <http://example.org/data/>
+SELECT ?val
+WHERE { db:Algo%s s3n:hasOperation ?op.
+?op s3n:hasProcedureFeature ?ft.
+?ft rdf:type s3n:ProcedureFeature.
+?ft s3n:hasProcedureProperty ?prop.
+?prop rdf:type s3n:ProcedureProperty.
+?prop s3n:hasSystemPropertyValue ?val.
+}

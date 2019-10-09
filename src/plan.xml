@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_112" class="java.beans.XMLDecoder">
+ <object class="pfeapp.Plan">
+  <void property="algorithm">
+   <string>Geolocalisation</string>
+  </void>
+  <void property="executionplan">
+   <array class="java.lang.String" length="10">
+    <void index="1">
+     <string>PositionSnippet</string>
+    </void>
+    <void index="2">
+     <string>LatitudeSnippet</string>
+    </void>
+    <void index="3">
+     <string>LongitudeSnippet</string>
+    </void>
+    <void index="4">
+     <string>AltitudeSnippet</string>
+    </void>
+    <void index="5">
+     <string>LocationSnippet</string>
+    </void>
+   </array>
+  </void>
+  <void property="smartSensor">
+   <string>SmartSportSMS21</string>
+  </void>
+ </object>
+</java>

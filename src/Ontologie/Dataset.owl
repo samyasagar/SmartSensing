@@ -1,0 +1,2109 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY mi "http://w3id.org/MI/" >
+    <!ENTITY s3n "http://w3id.org/s3n/" >
+    <!ENTITY sport "http://w3id.org/Sport/" >
+    <!ENTITY ssn "http://www.w3.org/ns/ssn/" >
+    <!ENTITY sosa "http://www.w3.org/ns/sosa/" >
+    <!ENTITY conf "http://w3id.org/Configuration/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY qudt-unit-1-1 "http://qudt.org/1.1/vocab/unit#" >
+    <!ENTITY qudt-1-1 "http://qudt.org/1.1/schema/qudt#" >
+    <!ENTITY ssn-system "http://www.w3.org/ns/ssn/systems/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY dul "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/owl/owlapi/turtle#"
+     xml:base="http://www.semanticweb.org/owl/owlapi/turtle"
+     xmlns:ssn="http://www.w3.org/ns/ssn/"
+     xmlns:sport="http://w3id.org/Sport/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:conf="http://w3id.org/Configuration/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sosa="http://www.w3.org/ns/sosa/"
+     xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ssn-system="&ssn;systems/"
+     xmlns:qudt-unit-1-1="http://qudt.org/1.1/vocab/unit#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:qudt-1-1="http://qudt.org/1.1/schema/qudt#"
+     xmlns:s3n="http://w3id.org/s3n/"
+     xmlns:mi="http://w3id.org/MI/">
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://qudt.org/1.1/schema/qudt#Unit -->
+
+    <owl:AnnotationProperty rdf:about="&qudt-1-1;Unit"/>
+    
+
+
+    <!-- http://w3id.org/Configuration/isAlgorithmOf -->
+
+    <owl:AnnotationProperty rdf:about="&conf;isAlgorithmOf"/>
+    
+
+
+    <!-- http://w3id.org/Sport/hasPerformanceIndicator -->
+
+    <owl:AnnotationProperty rdf:about="&sport;hasPerformanceIndicator"/>
+    
+
+
+    <!-- http://w3id.org/Sport/isPracticedin -->
+
+    <owl:AnnotationProperty rdf:about="&sport;isPracticedin"/>
+    
+
+
+    <!-- http://w3id.org/s3n/forAlgorithm -->
+
+    <owl:AnnotationProperty rdf:about="&s3n;forAlgorithm"/>
+    
+
+
+    <!-- http://w3id.org/s3n/hasImplementation -->
+
+    <owl:AnnotationProperty rdf:about="&s3n;hasImplementation"/>
+    
+
+
+    <!-- http://w3id.org/s3n/hasOperation -->
+
+    <owl:AnnotationProperty rdf:about="&s3n;hasOperation"/>
+    
+
+
+    <!-- http://w3id.org/s3n/hasPostCondition -->
+
+    <owl:AnnotationProperty rdf:about="&s3n;hasPostCondition"/>
+    
+
+
+    <!-- http://w3id.org/s3n/hasPreCondition -->
+
+    <owl:AnnotationProperty rdf:about="&s3n;hasPreCondition"/>
+    
+
+
+    <!-- http://w3id.org/s3n/hasProcedureFeature -->
+
+    <owl:AnnotationProperty rdf:about="&s3n;hasProcedureFeature"/>
+    
+
+
+    <!-- http://w3id.org/s3n/hasProcedureProperty -->
+
+    <owl:AnnotationProperty rdf:about="&s3n;hasProcedureProperty"/>
+    
+
+
+    <!-- http://w3id.org/s3n/hasSequenceNumberValue -->
+
+    <owl:AnnotationProperty rdf:about="&s3n;hasSequenceNumberValue"/>
+    
+
+
+    <!-- http://w3id.org/s3n/hasSystemPropertyValue -->
+
+    <owl:AnnotationProperty rdf:about="&s3n;hasSystemPropertyValue"/>
+    
+
+
+    <!-- http://w3id.org/s3n/ofOperation -->
+
+    <owl:AnnotationProperty rdf:about="&s3n;ofOperation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/observes -->
+
+    <owl:AnnotationProperty rdf:about="&sosa;observes"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/hasSubSystem -->
+
+    <owl:AnnotationProperty rdf:about="&ssn;hasSubSystem"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/hasSystemCapability -->
+
+    <owl:AnnotationProperty rdf:about="&ssn;systems/hasSystemCapability"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/hasSystemProperty -->
+
+    <owl:AnnotationProperty rdf:about="&ssn;systems/hasSystemProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/Configuration/Config -->
+
+    <owl:Class rdf:about="&conf;Config"/>
+    
+
+
+    <!-- http://w3id.org/MI/PerformanceIndicator -->
+
+    <owl:Class rdf:about="&mi;PerformanceIndicator"/>
+    
+
+
+    <!-- http://w3id.org/Sport/CollectiveSport -->
+
+    <owl:Class rdf:about="&sport;CollectiveSport"/>
+    
+
+
+    <!-- http://w3id.org/Sport/IndividualSport -->
+
+    <owl:Class rdf:about="&sport;IndividualSport"/>
+    
+
+
+    <!-- http://w3id.org/Sport/SportingPractice -->
+
+    <owl:Class rdf:about="&sport;SportingPractice"/>
+    
+
+
+    <!-- http://w3id.org/s3n/Algorithm -->
+
+    <owl:Class rdf:about="&s3n;Algorithm"/>
+    
+
+
+    <!-- http://w3id.org/s3n/MicroController -->
+
+    <owl:Class rdf:about="&s3n;MicroController"/>
+    
+
+
+    <!-- http://w3id.org/s3n/Operation -->
+
+    <owl:Class rdf:about="&s3n;Operation"/>
+    
+
+
+    <!-- http://w3id.org/s3n/PostCondition -->
+
+    <owl:Class rdf:about="&s3n;PostCondition"/>
+    
+
+
+    <!-- http://w3id.org/s3n/PreCondition -->
+
+    <owl:Class rdf:about="&s3n;PreCondition"/>
+    
+
+
+    <!-- http://w3id.org/s3n/ProcedureFeature -->
+
+    <owl:Class rdf:about="&s3n;ProcedureFeature"/>
+    
+
+
+    <!-- http://w3id.org/s3n/ProcedureProperty -->
+
+    <owl:Class rdf:about="&s3n;ProcedureProperty"/>
+    
+
+
+    <!-- http://w3id.org/s3n/SequenceNumber -->
+
+    <owl:Class rdf:about="&s3n;SequenceNumber"/>
+    
+
+
+    <!-- http://w3id.org/s3n/SmartSensor -->
+
+    <owl:Class rdf:about="&s3n;SmartSensor"/>
+    
+
+
+    <!-- http://w3id.org/s3n/Snippet -->
+
+    <owl:Class rdf:about="&s3n;Snippet"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/ObservableProperty -->
+
+    <owl:Class rdf:about="&sosa;ObservableProperty"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+    <owl:Class rdf:about="&sosa;Sensor"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/SystemCapability -->
+
+    <owl:Class rdf:about="&ssn;systems/SystemCapability"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/SystemProperty -->
+
+    <owl:Class rdf:about="&ssn;systems/SystemProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/data/Acceleration -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Acceleration">
+        <rdf:type rdf:resource="&s3n;PreCondition"/>
+        <rdf:type rdf:resource="&sosa;ObservableProperty"/>
+        <rdfs:label xml:lang="en">Acceleration</rdfs:label>
+        <rdfs:comment xml:lang="en">Acceleration is a observable property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Acceleration is a pre condition.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AccelerationFeature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AccelerationFeature">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">Acceleration feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Acceleration feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/AccelerationSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AccelerationOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AccelerationOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">Acceleration Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">Acceleration operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/AccelerationFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/AccelerationSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AccelerationSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AccelerationSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Acceleration snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Acceleration snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AccelerationSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AccelerationSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Acceleration space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">12</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Acceleration space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AlgoAverageSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AlgoAverageSpeed">
+        <rdf:type rdf:resource="&s3n;Algorithm"/>
+        <rdfs:label xml:lang="en">Algo average speed</rdfs:label>
+        <rdfs:comment xml:lang="en">Algo average speed is an algorithm.</rdfs:comment>
+        <s3n:hasPreCondition rdf:resource="http://example.org/data/Acceleration"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/AccelerationOperation"/>
+        <s3n:hasPostCondition rdf:resource="http://example.org/data/AverageSpeed"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/SpeedOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AlgoBodyTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AlgoBodyTemperature">
+        <rdf:type rdf:resource="&s3n;Algorithm"/>
+        <rdfs:label xml:lang="en">Algo Body Temperature</rdfs:label>
+        <rdfs:comment xml:lang="en">Algo body temperature is an algorithm.</rdfs:comment>
+        <s3n:hasPostCondition rdf:resource="http://example.org/data/BodyTemperature"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/BodyTemperatureOperation"/>
+        <s3n:hasPreCondition rdf:resource="http://example.org/data/Temperature"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/TemperatureOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AlgoCaloriesConsumedNumber -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AlgoCaloriesConsumedNumber">
+        <rdf:type rdf:resource="&s3n;Algorithm"/>
+        <rdfs:label xml:lang="en">Algo calories consumed</rdfs:label>
+        <rdfs:comment xml:lang="en">Algo calories consumed is an algorithm.</rdfs:comment>
+        <s3n:hasPreCondition rdf:resource="http://example.org/data/Acceleration"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/AccelerationOperation"/>
+        <s3n:hasPostCondition rdf:resource="http://example.org/data/CaloriesConsumedNumber"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/CaloriesConsumedOperation"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/DistanceOperation"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/SpeedOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AlgoGeolocalisation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AlgoGeolocalisation">
+        <rdf:type rdf:resource="&s3n;Algorithm"/>
+        <rdfs:label xml:lang="en">Algo location</rdfs:label>
+        <rdfs:comment xml:lang="en">Algo location is an algorithm.</rdfs:comment>
+        <s3n:hasOperation rdf:resource="http://example.org/data/AltitudeOperation"/>
+        <s3n:hasPostCondition rdf:resource="http://example.org/data/Geolocalisation"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/LatitudeOperation"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/LocationOperation"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/LongitudeOperation"/>
+        <s3n:hasPreCondition rdf:resource="http://example.org/data/Position"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/PositionOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AlgoHydrationRate -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AlgoHydrationRate">
+        <rdf:type rdf:resource="&s3n;Algorithm"/>
+        <rdfs:label xml:lang="en">Algo hydration rate</rdfs:label>
+        <rdfs:comment xml:lang="en">Algo hydration rate is an algorithm.</rdfs:comment>
+        <s3n:hasPreCondition rdf:resource="http://example.org/data/Height"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/HeightOperation"/>
+        <s3n:hasPostCondition rdf:resource="http://example.org/data/HydrationRate"/>
+        <s3n:hasPreCondition rdf:resource="http://example.org/data/Temperature"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/TemperatureOperation"/>
+        <s3n:hasPreCondition rdf:resource="http://example.org/data/Transpiration"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/TranspirationOperation"/>
+        <s3n:hasPreCondition rdf:resource="http://example.org/data/Weight"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/WeightOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AlgoStepNumber -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AlgoStepNumber">
+        <rdf:type rdf:resource="&s3n;Algorithm"/>
+        <rdfs:label xml:lang="en">Algo step number</rdfs:label>
+        <rdfs:comment xml:lang="en">Algo step number rate is an algorithm.</rdfs:comment>
+        <s3n:hasPreCondition rdf:resource="http://example.org/data/Acceleration"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/AccelerationOperation"/>
+        <s3n:hasPreCondition rdf:resource="http://example.org/data/Position"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/PositionOperation"/>
+        <s3n:hasPostCondition rdf:resource="http://example.org/data/StepNumber"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/StepNumberOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AlgoTiredness -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AlgoTiredness">
+        <rdf:type rdf:resource="&s3n;Algorithm"/>
+        <rdfs:label xml:lang="en">Algo tiredness</rdfs:label>
+        <rdfs:comment xml:lang="en">Algo tiredness is an algorithm.</rdfs:comment>
+        <s3n:hasPreCondition rdf:resource="http://example.org/data/Acceleration"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/AccelerationOperation"/>
+        <s3n:hasPreCondition rdf:resource="http://example.org/data/Position"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/PositionOperation"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/SpeedOperation"/>
+        <s3n:hasPostCondition rdf:resource="http://example.org/data/Tiredness"/>
+        <s3n:hasOperation rdf:resource="http://example.org/data/TirednessOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Altitude -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Altitude">
+        <rdf:type rdf:resource="&sosa;ObservableProperty"/>
+        <rdfs:label xml:lang="en">Altitude</rdfs:label>
+        <rdfs:comment xml:lang="en">Altitude is a observable property.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AltitudeFeature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AltitudeFeature">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">Altitude feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Altitude feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/AltitudeSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AltitudeOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AltitudeOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">Altitude Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">Altitude operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/AltitudeFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/AltitudeSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AltitudeSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AltitudeSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Altitude snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Altitude snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AltitudeSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AltitudeSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Altitude space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">3</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Altitude space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AverageSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AverageSpeed">
+        <rdf:type rdf:resource="&mi;PerformanceIndicator"/>
+        <rdf:type rdf:resource="&s3n;PostCondition"/>
+        <rdfs:label xml:lang="en">Average speed</rdfs:label>
+        <rdfs:comment xml:lang="en">Average speed is a performance indicator.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Average speed is a post condition.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Basketball -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Basketball">
+        <rdf:type rdf:resource="&sport;CollectiveSport"/>
+        <rdfs:label xml:lang="en">Basketball</rdfs:label>
+        <rdfs:comment xml:lang="en">Basketball is a Collective Sport.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/BodyTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/BodyTemperature">
+        <rdf:type rdf:resource="&mi;PerformanceIndicator"/>
+        <rdf:type rdf:resource="&s3n;PostCondition"/>
+        <rdfs:label xml:lang="en">Body temperature</rdfs:label>
+        <rdfs:comment xml:lang="en">Body temperature is a performance indicator.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Body temperature is a post condition.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/BodyTemperatureFeature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/BodyTemperatureFeature">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">Body temperature feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Body temperature feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/BodyTemperatureSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/BodyTemperatureOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/BodyTemperatureOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">Body temperature Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">Body temperature operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/BodyTemperatureFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/BodyTemperatureSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/BodyTemperatureSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/BodyTemperatureSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Body temperature snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Body temperature snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/BodyTemperatureSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/BodyTemperatureSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Body temperature space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">8</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Body temperature space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/CaloriesConsumed -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/CaloriesConsumed">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">Calories consumed feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Calories consumed feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/CaloriesConsumedSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/CaloriesConsumedNumber -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/CaloriesConsumedNumber">
+        <rdf:type rdf:resource="&mi;PerformanceIndicator"/>
+        <rdf:type rdf:resource="&s3n;PostCondition"/>
+        <rdfs:label xml:lang="en">Calories consumed number</rdfs:label>
+        <rdfs:comment xml:lang="en">Calories consumed number is a performance indicator.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Calories consumed number is a post condition.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/CaloriesConsumedOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/CaloriesConsumedOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">CaloriesConsumed Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">CaloriesConsumed operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/CaloriesConsumedFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/CaloriesConsumedSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/CaloriesConsumedSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/CaloriesConsumedSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Calories Consumed snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Calories Consumed snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/CaloriesConsumedSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/CaloriesConsumedSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Calories consumed space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">12</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Calories consumed space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/ConfigAlgoHydrationRate -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/ConfigAlgoHydrationRate">
+        <rdf:type rdf:resource="&conf;Config"/>
+        <conf:isAlgorithmOf rdf:resource="http://example.org/data/AlgoHydrationRate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Cycling -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Cycling">
+        <rdf:type rdf:resource="&sport;IndividualSport"/>
+        <rdfs:label xml:lang="en">Cycling</rdfs:label>
+        <rdfs:comment xml:lang="en">Cycling is a Individual Sport.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/DistanceFeature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/DistanceFeature">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">Distance feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Distance feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/DistanceSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/DistanceOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/DistanceOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">Distance Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">Distance operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/DistanceFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/DistanceSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/DistanceSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/DistanceSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Distance snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Distance snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/DistanceSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/DistanceSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Distance space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">12</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Distance space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/EntrainementBasketball -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/EntrainementBasketball">
+        <rdf:type rdf:resource="&sport;SportingPractice"/>
+        <rdfs:label xml:lang="en">Entrainemen basketball</rdfs:label>
+        <rdfs:comment xml:lang="en">Entrainemen basketball is a practice of Basketball.</rdfs:comment>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/AverageSpeed"/>
+        <sport:isPracticedin rdf:resource="http://example.org/data/Basketball"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/BodyTemperature"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Geolocalisation"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Tiredness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/EntrainementFootball -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/EntrainementFootball">
+        <rdf:type rdf:resource="&sport;SportingPractice"/>
+        <rdfs:label xml:lang="en">Entrainemen football</rdfs:label>
+        <rdfs:comment xml:lang="en">Entrainemen football is a practice of Football.</rdfs:comment>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/AverageSpeed"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/BodyTemperature"/>
+        <sport:isPracticedin rdf:resource="http://example.org/data/Football"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Geolocalisation"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Tiredness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/EntrainementRugby -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/EntrainementRugby">
+        <rdf:type rdf:resource="&sport;SportingPractice"/>
+        <rdfs:label xml:lang="en">Entrainemen rugby</rdfs:label>
+        <rdfs:comment xml:lang="en">Entrainemen rugby is a practice of Rugby.</rdfs:comment>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/AverageSpeed"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Geolocalisation"/>
+        <sport:isPracticedin rdf:resource="http://example.org/data/Rugby"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Tiredness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Football -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Football">
+        <rdf:type rdf:resource="&sport;CollectiveSport"/>
+        <rdfs:label xml:lang="en">Football</rdfs:label>
+        <rdfs:comment xml:lang="en">Football is a Collective Sport.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Geolocalisation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Geolocalisation">
+        <rdf:type rdf:resource="&mi;PerformanceIndicator"/>
+        <rdf:type rdf:resource="&s3n;PostCondition"/>
+        <rdfs:label xml:lang="en">Geolocalisation</rdfs:label>
+        <rdfs:comment xml:lang="en">Geolocalisation is a performance indicator.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Geolocalisation is a post condition.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Golf -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Golf">
+        <rdf:type rdf:resource="&sport;IndividualSport"/>
+        <rdfs:label xml:lang="en">Golf</rdfs:label>
+        <rdfs:comment xml:lang="en">Golf is a Individual Sport.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Height -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Height">
+        <rdf:type rdf:resource="&s3n;PreCondition"/>
+        <rdf:type rdf:resource="&sosa;ObservableProperty"/>
+        <rdfs:label xml:lang="en">Height</rdfs:label>
+        <rdfs:comment xml:lang="en">Height is a observable property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Height is a pre condition.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/HeightFeature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/HeightFeature">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">Height feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Height feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/HeightSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/HeightOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/HeightOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">Height Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">Height operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/HeightFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/HeightSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/HeightSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/HeightSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Height snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Height snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/HeightSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/HeightSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Height space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">3</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Height space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/HydrationRate -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/HydrationRate">
+        <rdf:type rdf:resource="&mi;PerformanceIndicator"/>
+        <rdf:type rdf:resource="&s3n;PostCondition"/>
+        <rdfs:label xml:lang="en">Hydration rate number</rdfs:label>
+        <rdfs:label xml:lang="en">HydrationRate</rdfs:label>
+        <rdfs:comment xml:lang="en">Hydration rate is a performance indicator.</rdfs:comment>
+        <rdfs:comment xml:lang="en">HydrationRate is a post condition.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/LatitudeFeature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/LatitudeFeature">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">Latitude feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Latitude feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/LatitudeSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/LatitudeOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/LatitudeOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">Latitude Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">Latitude operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/LatitudeFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/LatitudeSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/LatitudeSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/LatitudeSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Latitude snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Latitude snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/LatitudeSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/LatitudeSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Latitude space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">3</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Latitude space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Location -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Location">
+        <rdf:type rdf:resource="&sosa;ObservableProperty"/>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+        <rdfs:comment xml:lang="en">Location is a observable property.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/LocationFeature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/LocationFeature">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">Location feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Location feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/LocationSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/LocationOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/LocationOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">Location Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">Location operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/LocationFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/LocationSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/LocationSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/LocationSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Location snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Location snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/LocationSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/LocationSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Location space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">3</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Location space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/LongTrailCycling -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/LongTrailCycling">
+        <rdf:type rdf:resource="&sport;SportingPractice"/>
+        <rdfs:label xml:lang="en">Long trail cycling</rdfs:label>
+        <rdfs:comment xml:lang="en">Long trail cycling is a practice of Cycling.</rdfs:comment>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/CaloriesConsumedNumber"/>
+        <sport:isPracticedin rdf:resource="http://example.org/data/Cycling"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/HydrationRate"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Tiredness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/LongTrailRunning -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/LongTrailRunning">
+        <rdf:type rdf:resource="&sport;SportingPractice"/>
+        <rdfs:label xml:lang="en">Long trail running</rdfs:label>
+        <rdfs:comment xml:lang="en">Long trail running is a practice of Running.</rdfs:comment>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/AverageSpeed"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/CaloriesConsumedNumber"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Geolocalisation"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/HydrationRate"/>
+        <sport:isPracticedin rdf:resource="http://example.org/data/Running"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/StepNumber"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Tiredness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/LongitudeFeature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/LongitudeFeature">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">Longitude feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Longitude feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/LongitudeSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/LongitudeOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/LongitudeOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">Longitude Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">Longitude operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/LongitudeFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/LongitudeSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/LongitudeSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/LongitudeSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Longitude snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Longitude snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/LongitudeSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/LongitudeSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Longitude space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">3</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Longitude space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/MatchBasketball -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/MatchBasketball">
+        <rdf:type rdf:resource="&sport;SportingPractice"/>
+        <rdfs:label xml:lang="en">Match basketball</rdfs:label>
+        <rdfs:comment xml:lang="en">Match basketball is a practice of Basketball.</rdfs:comment>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/AverageSpeed"/>
+        <sport:isPracticedin rdf:resource="http://example.org/data/Basketball"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/BodyTemperature"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Geolocalisation"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Tiredness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/MatchFootball -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/MatchFootball">
+        <rdf:type rdf:resource="&sport;SportingPractice"/>
+        <rdfs:label xml:lang="en">Match football</rdfs:label>
+        <rdfs:comment xml:lang="en">Match football is a practice of Football.</rdfs:comment>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/AverageSpeed"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/BodyTemperature"/>
+        <sport:isPracticedin rdf:resource="http://example.org/data/Football"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Geolocalisation"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Tiredness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/MatchRugby -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/MatchRugby">
+        <rdf:type rdf:resource="&sport;SportingPractice"/>
+        <rdfs:label xml:lang="en">Match rugby</rdfs:label>
+        <rdfs:comment xml:lang="en">Match rugby is a practice of Rugby.</rdfs:comment>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/AverageSpeed"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Geolocalisation"/>
+        <sport:isPracticedin rdf:resource="http://example.org/data/Rugby"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Tiredness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Memory16F84 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Memory16F84">
+        <rdf:type rdf:resource="&ssn;systems/SystemProperty"/>
+        <rdfs:label xml:lang="en">Memory16F84</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">14</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Memory16F84 is a memory of Mico-Controller16F84.</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Memory8XC251TA -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Memory8XC251TA">
+        <rdf:type rdf:resource="&ssn;systems/SystemProperty"/>
+        <rdfs:label xml:lang="en">Memory8XC251TA</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">32</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Memory8XC251TA is a memory of Mico-Controller8XC251TA.</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/MemoryAT90CAN32 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/MemoryAT90CAN32">
+        <rdf:type rdf:resource="&ssn;systems/SystemProperty"/>
+        <rdfs:label xml:lang="en">MemoryAT90CAN32</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">8</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">MemoryAT90CAN32 is a memory of Mico-ControllerAT90CAN32.</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/MemoryDS4830 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/MemoryDS4830">
+        <rdf:type rdf:resource="&ssn;systems/SystemProperty"/>
+        <rdfs:label xml:lang="en">MemoryDS4830</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">16</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">MemoryDS4830 is a memory of Mico-ControllerDS4830.</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/MemoryS3CK318 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/MemoryS3CK318">
+        <rdf:type rdf:resource="&ssn;systems/SystemProperty"/>
+        <rdfs:label xml:lang="en">MemoryS3CK318</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">8</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">MemoryS3CK318 is a memory of Mico-ControllerS3CK318.</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Position -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Position">
+        <rdf:type rdf:resource="&s3n;PreCondition"/>
+        <rdf:type rdf:resource="&sosa;ObservableProperty"/>
+        <rdfs:label xml:lang="en">Position</rdfs:label>
+        <rdfs:comment xml:lang="en">Position is a observable property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Position is a pre condition.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/PositionFeature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/PositionFeature">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">Position feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Position feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/PositionSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/PositionOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/PositionOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">Position Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">Position operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/PositionFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/PositionSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/PositionSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/PositionSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Position snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Position snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/PositionSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/PositionSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Position space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">3</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Position space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Rugby -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Rugby">
+        <rdf:type rdf:resource="&sport;CollectiveSport"/>
+        <rdfs:label xml:lang="en">Rugby</rdfs:label>
+        <rdfs:comment xml:lang="en">Rugby is a Collective Sport.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Running -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Running">
+        <rdf:type rdf:resource="&sport;IndividualSport"/>
+        <rdfs:label xml:lang="en">Running</rdfs:label>
+        <rdfs:comment xml:lang="en">Running is a Individual Sport.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceAccOpAlgoAvgSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceAccOpAlgoAvgSpeed">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">1</s3n:hasSequenceNumberValue>
+        <s3n:ofOperation rdf:resource="http://example.org/data/AccelerationOperation"/>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoAverageSpeed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceAccOpAlgoCalCons -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceAccOpAlgoCalCons">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">1</s3n:hasSequenceNumberValue>
+        <s3n:ofOperation rdf:resource="http://example.org/data/AccelerationOperation"/>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoCaloriesConsumedNumber"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceAccOpAlgoStepNumber -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceAccOpAlgoStepNumber">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">1</s3n:hasSequenceNumberValue>
+        <s3n:ofOperation rdf:resource="http://example.org/data/AccelerationOperation"/>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoStepNumber"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceAccOpAlgoTiredness -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceAccOpAlgoTiredness">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">2</s3n:hasSequenceNumberValue>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">5</s3n:hasSequenceNumberValue>
+        <s3n:ofOperation rdf:resource="http://example.org/data/AccelerationOperation"/>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoTiredness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceAltitudeOpAlgoLocation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceAltitudeOpAlgoLocation">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">4</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoGeolocalisation"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/AltitudeOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceBodyTempOpAlgoBodyTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceBodyTempOpAlgoBodyTemperature">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">2</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoBodyTemperature"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/BodyTemperatureOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceCalConsOpAlgoCaloriesConsumed -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceCalConsOpAlgoCaloriesConsumed">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">4</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoCaloriesConsumedNumber"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/CaloriesConsumedOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceDistanceOpAlgoCaloriesConsumed -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceDistanceOpAlgoCaloriesConsumed">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">3</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoCaloriesConsumedNumber"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/DistanceOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceHeightOpAlgoHydrationRate -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceHeightOpAlgoHydrationRate">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">2</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoHydrationRate"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/HeightOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceLatitudeOpAlgoLocation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceLatitudeOpAlgoLocation">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">2</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoGeolocalisation"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/LatitudeOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceLocationOpAlgoLocation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceLocationOpAlgoLocation">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">5</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoGeolocalisation"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/LocationOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceLongitudeOpAlgoLocation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceLongitudeOpAlgoLocation">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">3</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoGeolocalisation"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/LongitudeOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequencePositionOpAlgoLocation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequencePositionOpAlgoLocation">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">1</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoGeolocalisation"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/PositionOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequencePositionOpAlgoStepNumber -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequencePositionOpAlgoStepNumber">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">2</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoStepNumber"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/PositionOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequencePositionOpAlgoTiredness -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequencePositionOpAlgoTiredness">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">1</s3n:hasSequenceNumberValue>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">4</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoTiredness"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/PositionOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceSpeedOpAlgoAvgSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceSpeedOpAlgoAvgSpeed">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">2</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoAverageSpeed"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/SpeedOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceSpeedOpAlgoCaloriesConsumed -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceSpeedOpAlgoCaloriesConsumed">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">2</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoCaloriesConsumedNumber"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/SpeedOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceSpeedOpAlgoTiredness -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceSpeedOpAlgoTiredness">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">3</s3n:hasSequenceNumberValue>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">6</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoTiredness"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/SpeedOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceStepNumberOpAlgoStepNumber -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceStepNumberOpAlgoStepNumber">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">3</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoStepNumber"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/StepNumberOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceTemperatureOpAlgoBodyTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceTemperatureOpAlgoBodyTemperature">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">1</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoBodyTemperature"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/TemperatureOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceTemperatureOpAlgoHydrationRate -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceTemperatureOpAlgoHydrationRate">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">4</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoHydrationRate"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/TemperatureOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceTirednessOpAlgoTiredness -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceTirednessOpAlgoTiredness">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">7</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoTiredness"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/TirednessOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceTranspirationOpAlgoHydrationRate -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceTranspirationOpAlgoHydrationRate">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">3</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoHydrationRate"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/TranspirationOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SequenceWeightOpAlgoHydrationRate -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SequenceWeightOpAlgoHydrationRate">
+        <rdf:type rdf:resource="&s3n;SequenceNumber"/>
+        <s3n:hasSequenceNumberValue rdf:datatype="&xsd;int">1</s3n:hasSequenceNumberValue>
+        <s3n:forAlgorithm rdf:resource="http://example.org/data/AlgoHydrationRate"/>
+        <s3n:ofOperation rdf:resource="http://example.org/data/WeightOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/ShortTrailCycling -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/ShortTrailCycling">
+        <rdf:type rdf:resource="&sport;SportingPractice"/>
+        <rdfs:label xml:lang="en">Short trail cycling</rdfs:label>
+        <rdfs:comment xml:lang="en">Short trail cycling is a practice of Cycling.</rdfs:comment>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/CaloriesConsumedNumber"/>
+        <sport:isPracticedin rdf:resource="http://example.org/data/Cycling"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/HydrationRate"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Tiredness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/ShortTrailRunning -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/ShortTrailRunning">
+        <rdf:type rdf:resource="&sport;SportingPractice"/>
+        <rdfs:label xml:lang="en">Short trail running</rdfs:label>
+        <rdfs:comment xml:lang="en">Short trail running is a practice of Running.</rdfs:comment>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/AverageSpeed"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/CaloriesConsumedNumber"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Geolocalisation"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/HydrationRate"/>
+        <sport:isPracticedin rdf:resource="http://example.org/data/Running"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/StepNumber"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Tiredness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SmartSportSMS16 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SmartSportSMS16">
+        <rdf:type rdf:resource="&s3n;SmartSensor"/>
+        <rdfs:label xml:lang="en">SmartSportSMS16</rdfs:label>
+        <rdfs:comment xml:lang="en">SmartSportSMS16 is a Smart-Sensor of Sport.</rdfs:comment>
+        <ssn:hasSubSystem rdf:resource="http://example.org/data/MicoControllerDS4830/20"/>
+        <ssn:hasSubSystem rdf:resource="http://example.org/data/TemperatureLM124/1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SmartSportSMS17 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SmartSportSMS17">
+        <rdf:type rdf:resource="&s3n;SmartSensor"/>
+        <rdfs:label xml:lang="en">SmartSportSMS17</rdfs:label>
+        <rdfs:comment xml:lang="en">SmartSportSMS17 is a Smart-Sensor of Sport.</rdfs:comment>
+        <ssn:hasSubSystem rdf:resource="http://example.org/data/GpsGP635T/2"/>
+        <ssn:hasSubSystem rdf:resource="http://example.org/data/MicoController8XC251TA/30"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SmartSportSMS18 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SmartSportSMS18">
+        <rdf:type rdf:resource="&s3n;SmartSensor"/>
+        <rdfs:label xml:lang="en">SmartSportSMS18</rdfs:label>
+        <rdfs:comment xml:lang="en">SmartSportSMS18 is a Smart-Sensor of Sport.</rdfs:comment>
+        <ssn:hasSubSystem rdf:resource="http://example.org/data/GyroscopeMPU9250/3"/>
+        <ssn:hasSubSystem rdf:resource="http://example.org/data/MicoController16F84/40"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SmartSportSMS19 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SmartSportSMS19">
+        <rdf:type rdf:resource="&s3n;SmartSensor"/>
+        <rdfs:label xml:lang="en">SmartSportSMS19</rdfs:label>
+        <rdfs:comment xml:lang="en">SmartSportSMS19 is a Smart-Sensor of Sport.</rdfs:comment>
+        <ssn:hasSubSystem rdf:resource="http://example.org/data/AccelerometreLIS2DH/4"/>
+        <ssn:hasSubSystem rdf:resource="http://example.org/data/MicoControllerS3CK318/50"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SmartSportSMS20 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SmartSportSMS20">
+        <rdf:type rdf:resource="&s3n;SmartSensor"/>
+        <rdfs:label xml:lang="en">SmartSportSMS20</rdfs:label>
+        <rdfs:comment xml:lang="en">SmartSportSMS20 is a Smart-Sensor of Sport.</rdfs:comment>
+        <ssn:hasSubSystem rdf:resource="http://example.org/data/AltimetreMS5805/5"/>
+        <ssn:hasSubSystem rdf:resource="http://example.org/data/MicoControllerAT90CAN32/60"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SmartSportSMS21 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SmartSportSMS21">
+        <rdf:type rdf:resource="&s3n;SmartSensor"/>
+        <rdfs:label xml:lang="en">SmartSportSMS21</rdfs:label>
+        <rdfs:comment xml:lang="en">SmartSportSMS21 is a Smart-Sensor of Sport.</rdfs:comment>
+        <ssn:hasSubSystem rdf:resource="http://example.org/data/AccelerometreLIS2DH/4"/>
+        <ssn:hasSubSystem rdf:resource="http://example.org/data/GyroscopeMPU9250/3"/>
+        <ssn:hasSubSystem rdf:resource="http://example.org/data/MicoController8XC251TA/30"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SpeedFeature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SpeedFeature">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">Speed feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Speed feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/SpeedSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SpeedOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SpeedOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">Speed Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">Speed operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/SpeedFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/SpeedSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SpeedSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SpeedSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Speed snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Speed snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SpeedSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SpeedSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Speed space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">12</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Speed space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/StepNumber -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/StepNumber">
+        <rdf:type rdf:resource="&mi;PerformanceIndicator"/>
+        <rdf:type rdf:resource="&s3n;PostCondition"/>
+        <rdfs:label xml:lang="en">Step number</rdfs:label>
+        <rdfs:comment xml:lang="en">Step number is a performance indicator.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Step number is a post condition.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/StepNumberFeature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/StepNumberFeature">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">StepNumber feature</rdfs:label>
+        <rdfs:comment xml:lang="en">StepNumber feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/StepNumberSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/StepNumberOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/StepNumberOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">Step number Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">Step number operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/StepNumberFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/StepNumberSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/StepNumberSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/StepNumberSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Step number snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Step number snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/StepNumberSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/StepNumberSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Step number space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">5</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Step number space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SystemCapabilityMicro16F84 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SystemCapabilityMicro16F84">
+        <rdf:type rdf:resource="&ssn;systems/SystemCapability"/>
+        <rdfs:label xml:lang="en">SystemCapabilityMicro16F84</rdfs:label>
+        <rdfs:comment xml:lang="en">SystemCapabilityMicro16F84 is a Mico-Controller System Capability.</rdfs:comment>
+        <ssn-system:hasSystemProperty rdf:resource="http://example.org/data/Memory16F84"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SystemCapabilityMicro8XC251TA -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SystemCapabilityMicro8XC251TA">
+        <rdf:type rdf:resource="&ssn;systems/SystemCapability"/>
+        <rdfs:label xml:lang="en">SystemCapabilityMicro8XC251TA</rdfs:label>
+        <rdfs:comment xml:lang="en">SystemCapabilityMicro8XC251TA is a Mico-Controller System Capability.</rdfs:comment>
+        <ssn-system:hasSystemProperty rdf:resource="http://example.org/data/Memory8XC251TA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SystemCapabilityMicroAT90CAN32 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SystemCapabilityMicroAT90CAN32">
+        <rdf:type rdf:resource="&ssn;systems/SystemCapability"/>
+        <rdfs:label xml:lang="en">SystemCapabilityMicroAT90CAN32</rdfs:label>
+        <rdfs:comment xml:lang="en">SystemCapabilityMicroAT90CAN32 is a Mico-Controller System Capability.</rdfs:comment>
+        <ssn-system:hasSystemProperty rdf:resource="http://example.org/data/MemoryAT90CAN32"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SystemCapabilityMicroDS4830 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SystemCapabilityMicroDS4830">
+        <rdf:type rdf:resource="&ssn;systems/SystemCapability"/>
+        <rdfs:label xml:lang="en">SystemCapabilityMicroDS4830</rdfs:label>
+        <rdfs:comment xml:lang="en">SystemCapabilityMicroDS4830 is a Mico-Controller System Capability.</rdfs:comment>
+        <ssn-system:hasSystemProperty rdf:resource="http://example.org/data/MemoryDS4830"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/SystemCapabilityMicroS3CK318 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/SystemCapabilityMicroS3CK318">
+        <rdf:type rdf:resource="&ssn;systems/SystemCapability"/>
+        <rdfs:label xml:lang="en">SystemCapabilityMicroS3CK318</rdfs:label>
+        <rdfs:comment xml:lang="en">SystemCapabilityMicroS3CK318 is a Mico-Controller System Capability.</rdfs:comment>
+        <ssn-system:hasSystemProperty rdf:resource="http://example.org/data/MemoryS3CK318"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Temperature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Temperature">
+        <rdf:type rdf:resource="&s3n;PreCondition"/>
+        <rdf:type rdf:resource="&sosa;ObservableProperty"/>
+        <rdfs:label xml:lang="en">Temperature</rdfs:label>
+        <rdfs:comment xml:lang="en">Temperature is a observable property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Temperature is a pre condition.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/TemperatureFeature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/TemperatureFeature">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">Temperature feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Temperature feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/TemperatureSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/TemperatureOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/TemperatureOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">Temperature Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">Temperature operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/TemperatureFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/TemperatureSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/TemperatureSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/TemperatureSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Temperature snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Temperature snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/TemperatureSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/TemperatureSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Temperature space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">4</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Temperature space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Tiredness -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Tiredness">
+        <rdf:type rdf:resource="&mi;PerformanceIndicator"/>
+        <rdf:type rdf:resource="&s3n;PostCondition"/>
+        <rdfs:label xml:lang="en">Tiredness</rdfs:label>
+        <rdfs:comment xml:lang="en">Tiredness is a performance indicator.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Tiredness is a post condition.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/TirednessFeature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/TirednessFeature">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">Tiredness feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Tiredness feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/TirednessSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/TirednessOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/TirednessOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">Tiredness Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">Tiredness operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/TirednessFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/TirednessSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/TirednessSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/TirednessSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Tiredness snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Tiredness snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/TirednessSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/TirednessSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Tiredness space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">6</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Tiredness space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/TrailGolf -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/TrailGolf">
+        <rdf:type rdf:resource="&sport;SportingPractice"/>
+        <rdfs:label xml:lang="en">Trail golf</rdfs:label>
+        <rdfs:comment xml:lang="en">Trail golf is a practice of Golf.</rdfs:comment>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/BodyTemperature"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/CaloriesConsumedNumber"/>
+        <sport:isPracticedin rdf:resource="http://example.org/data/Golf"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/HydrationRate"/>
+        <sport:hasPerformanceIndicator rdf:resource="http://example.org/data/Tiredness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Transpiration -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Transpiration">
+        <rdf:type rdf:resource="&s3n;PreCondition"/>
+        <rdf:type rdf:resource="&sosa;ObservableProperty"/>
+        <rdfs:label xml:lang="en">Transpiration</rdfs:label>
+        <rdfs:comment xml:lang="en">Transpiration is a observable property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Transpiration is a pre condition.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/TranspirationFeature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/TranspirationFeature">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">Transpiration feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Transpiration feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/TranspirationSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/TranspirationOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/TranspirationOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">Transpiration Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">Transpiration operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/TranspirationFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/TranspirationSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/TranspirationSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/TranspirationSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Transpiration snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Transpiration snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/TranspirationSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/TranspirationSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Transpiration space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">3</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Transpiration space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/Weight -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/Weight">
+        <rdf:type rdf:resource="&s3n;PreCondition"/>
+        <rdf:type rdf:resource="&sosa;ObservableProperty"/>
+        <rdfs:label xml:lang="en">Weight</rdfs:label>
+        <rdfs:comment xml:lang="en">Weight is a observable property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Weight is a pre condition.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/WeightFeature -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/WeightFeature">
+        <rdf:type rdf:resource="&s3n;ProcedureFeature"/>
+        <rdfs:label xml:lang="en">Weight feature</rdfs:label>
+        <rdfs:comment xml:lang="en">Weight feature is a Procedure Feature.</rdfs:comment>
+        <s3n:hasProcedureProperty rdf:resource="http://example.org/data/WeightSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/WeightOperation -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/WeightOperation">
+        <rdf:type rdf:resource="&s3n;Operation"/>
+        <rdfs:label xml:lang="en">Weight Operation</rdfs:label>
+        <rdfs:comment xml:lang="en">Weight operation is an Operation.</rdfs:comment>
+        <s3n:hasProcedureFeature rdf:resource="http://example.org/data/WeightFeature"/>
+        <s3n:hasImplementation rdf:resource="http://example.org/data/WeightSnippet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/WeightSnippet -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/WeightSnippet">
+        <rdf:type rdf:resource="&s3n;Snippet"/>
+        <rdfs:label xml:lang="en">Weight snippet</rdfs:label>
+        <rdfs:comment xml:lang="en">Weight snippet is a snippet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/WeightSpace -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/WeightSpace">
+        <rdf:type rdf:resource="&s3n;ProcedureProperty"/>
+        <rdfs:label xml:lang="en">Weight space</rdfs:label>
+        <s3n:hasSystemPropertyValue rdf:datatype="&xsd;int">3</s3n:hasSystemPropertyValue>
+        <rdfs:comment xml:lang="en">Weight space is Procedure Property</rdfs:comment>
+        <qudt-1-1:Unit rdf:resource="&qudt-unit-1-1;Bit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AccelerometreLIS2DH/4 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AccelerometreLIS2DH/4">
+        <rdf:type rdf:resource="&sosa;Sensor"/>
+        <rdfs:label xml:lang="en">AccelerometreLIS2DH #4</rdfs:label>
+        <rdfs:comment xml:lang="en">AccelerometreLIS2DH #4 is a Acceleration sensor.</rdfs:comment>
+        <sosa:observes rdf:resource="http://example.org/data/Acceleration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/AltimetreMS5805/5 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/AltimetreMS5805/5">
+        <rdf:type rdf:resource="&sosa;Sensor"/>
+        <rdfs:label xml:lang="en">AltimetreMS5805 #5</rdfs:label>
+        <rdfs:comment xml:lang="en">AltimetreMS5805 #5 is an Altitude sensor.</rdfs:comment>
+        <sosa:observes rdf:resource="http://example.org/data/Altitude"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/GpsGP635T/2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/GpsGP635T/2">
+        <rdf:type rdf:resource="&sosa;Sensor"/>
+        <rdfs:label xml:lang="en">GpsGP635T #2</rdfs:label>
+        <rdfs:comment xml:lang="en">GpsGP635T #2 is a Location sensor.</rdfs:comment>
+        <sosa:observes rdf:resource="http://example.org/data/Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/GyroscopeMPU9250/3 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/GyroscopeMPU9250/3">
+        <rdf:type rdf:resource="&sosa;Sensor"/>
+        <rdfs:label xml:lang="en">GyroscopeMPU9250 #3</rdfs:label>
+        <rdfs:comment xml:lang="en">GyroscopeMPU9250 #3 is a Position sensor.</rdfs:comment>
+        <sosa:observes rdf:resource="http://example.org/data/Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/MicoController16F84/40 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/MicoController16F84/40">
+        <rdf:type rdf:resource="&s3n;MicroController"/>
+        <rdfs:label xml:lang="en">MicoController16F84 #40</rdfs:label>
+        <rdfs:comment xml:lang="en">MicoController16F84 #40 is a Mico-Controller, it is of 16F84 Reference.</rdfs:comment>
+        <ssn-system:hasSystemCapability rdf:resource="http://example.org/data/SystemCapabilityMicro16F84"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/MicoController8XC251TA/30 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/MicoController8XC251TA/30">
+        <rdf:type rdf:resource="&s3n;MicroController"/>
+        <rdfs:label xml:lang="en">MicoController8XC251TA #30</rdfs:label>
+        <rdfs:comment xml:lang="en">MicoController8XC251TA #30 is a Mico-Controller, it is of 8XC251TA Reference.</rdfs:comment>
+        <ssn-system:hasSystemCapability rdf:resource="http://example.org/data/SystemCapabilityMicro8XC251TA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/MicoControllerAT90CAN32/60 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/MicoControllerAT90CAN32/60">
+        <rdf:type rdf:resource="&s3n;MicroController"/>
+        <rdfs:label xml:lang="en">MicoControllerAT90CAN32 #60</rdfs:label>
+        <rdfs:comment xml:lang="en">MicoControllerAT90CAN32 #60 is a Mico-Controller, it is of AT90CAN32 Reference.</rdfs:comment>
+        <ssn-system:hasSystemCapability rdf:resource="http://example.org/data/SystemCapabilityMicroAT90CAN32"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/MicoControllerDS4830/20 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/MicoControllerDS4830/20">
+        <rdf:type rdf:resource="&s3n;MicroController"/>
+        <rdfs:label xml:lang="en">MicoControllerDS4830 #20</rdfs:label>
+        <rdfs:comment xml:lang="en">MicoControllerDS4830 #20 is a Mico-Controller, it is of DS4830 Reference.</rdfs:comment>
+        <ssn-system:hasSystemCapability rdf:resource="http://example.org/data/SystemCapabilityMicroDS4830"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/MicoControllerS3CK318/50 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/MicoControllerS3CK318/50">
+        <rdf:type rdf:resource="&s3n;MicroController"/>
+        <rdfs:label xml:lang="en">MicoControllerS3CK318 #50</rdfs:label>
+        <rdfs:comment xml:lang="en">MicoControllerS3CK318 #50 is a Mico-Controller, it is of S3CK318 Reference.</rdfs:comment>
+        <ssn-system:hasSystemCapability rdf:resource="http://example.org/data/SystemCapabilityMicroS3CK318"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/data/TemperatureLM124/1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/data/TemperatureLM124/1">
+        <rdf:type rdf:resource="&sosa;Sensor"/>
+        <rdfs:label xml:lang="en">TemperatureLM124 #1</rdfs:label>
+        <rdfs:comment xml:lang="en">TemperatureLM124 #1 is a Temperature sensor.</rdfs:comment>
+        <sosa:observes rdf:resource="http://example.org/data/Temperature"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

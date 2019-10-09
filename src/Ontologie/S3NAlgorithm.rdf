@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY schema "http://schema.org/" >
+    <!ENTITY s3n "http://w3id.org/s3n/" >
+    <!ENTITY ssn "http://www.w3.org/ns/ssn/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY sosa "http://www.w3.org/ns/sosa/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY time "http://www.w3.org/2006/time#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY voaf "http://purl.org/vocommons/voaf#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="http://w3id.org/s3n/S3NAlgorithm#"
+     xml:base="http://w3id.org/s3n/S3NAlgorithm"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:ssn="http://www.w3.org/ns/ssn/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:sosa="http://www.w3.org/ns/sosa/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:s3n="http://w3id.org/s3n/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://w3id.org/s3n/S3NAlgorithm">
+        <dcterms:creator>SAGAR Samya -  Lab-STICC (imt-atlantique)</dcterms:creator>
+        <dcterms:created>2018</dcterms:created>
+        <dcterms:title xml:lang="en">Semantic Smart Sensor Network (S3N) Ontology: Algorithm Module</dcterms:title>
+        <vann:preferredNamespaceUri>http://w3id.org/s3n/</vann:preferredNamespaceUri>
+        <dcterms:description xml:lang="en">This ontology describes Algorithms.</dcterms:description>
+        <vann:preferredNamespacePrefix>s3n</vann:preferredNamespacePrefix>
+        <dcterms:license rdf:resource="https://www.apache.org/licenses/LICENSE-2.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+    <owl:AnnotationProperty rdf:about="&schema;domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+    <owl:AnnotationProperty rdf:about="&schema;rangeIncludes"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="&skos;definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="&skos;example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="&skos;note"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="&foaf;name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/s3n/forAlgorithm -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/s3n/forAlgorithm">
+        <rdfs:label>for algorithm</rdfs:label>
+        <skos:definition>It links a number of a sequence to an algorithm</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/s3n/S3NAlgorithm"/>
+        <schema:rangeIncludes rdf:resource="http://w3id.org/s3n/Algorithm"/>
+        <schema:domainIncludes rdf:resource="http://w3id.org/s3n/SequenceNumber"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/hasImplementation -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/s3n/hasImplementation">
+        <rdfs:label>has implementation</rdfs:label>
+        <skos:definition>Relation between an operation and a code that implements it.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/s3n/S3NAlgorithm"/>
+        <schema:domainIncludes rdf:resource="http://w3id.org/s3n/Operation"/>
+        <schema:rangeIncludes rdf:resource="http://w3id.org/s3n/Snippet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/hasOperation -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/s3n/hasOperation">
+        <rdfs:label>has operation</rdfs:label>
+        <skos:definition>A relation between some algorithm  and an operation.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/s3n/S3NAlgorithm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/hasPostCondition -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/s3n/hasPostCondition">
+        <rdfs:label>has post-condition</rdfs:label>
+        <skos:definition>Relation between an Algorithm (or operation) and a Post-Condition of it.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/s3n/S3NAlgorithm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/hasPreCondition -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/s3n/hasPreCondition">
+        <rdfs:label>has pre-condition</rdfs:label>
+        <skos:definition>Relation between an Algorithm (or operation) and a Pre-Condition of it.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/s3n/S3NAlgorithm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/ofOperation -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/s3n/ofOperation">
+        <rdfs:label>of operation</rdfs:label>
+        <skos:definition>A relation between some number of a sequence and a operation.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/s3n/S3NAlgorithm"/>
+        <schema:rangeIncludes rdf:resource="http://w3id.org/s3n/Operation"/>
+        <schema:domainIncludes rdf:resource="http://w3id.org/s3n/SequenceNumber"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/s3n/forAlgorithm"/>
+            <rdf:Description rdf:about="http://w3id.org/s3n/hasOperation"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+    <owl:Class rdf:about="&voaf;Vocabulary"/>
+    
+
+
+    <!-- http://w3id.org/s3n/Algorithm -->
+
+    <owl:Class rdf:about="http://w3id.org/s3n/Algorithm">
+        <rdfs:label>Algorithm</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/s3n/hasOperation"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/s3n/Operation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/s3n/hasPreCondition"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/s3n/PreCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/s3n/hasPostCondition"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/s3n/PostCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/s3n/hasOperation"/>
+                <owl:onClass rdf:resource="http://w3id.org/s3n/Operation"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>A algorithm describes a succession of operations that, if faithfully executed, will produce the desired result.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/s3n/S3NAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/Operation -->
+
+    <owl:Class rdf:about="http://w3id.org/s3n/Operation">
+        <rdfs:label>Operation</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/s3n/hasPreCondition"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/s3n/PreCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/s3n/hasPostCondition"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/s3n/PostCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/s3n/hasImplementation"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/s3n/Snippet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>An operation is an instruction, or a stage of a logical processing (algorithm).</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/s3n/S3NAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/Parameter -->
+
+    <owl:Class rdf:about="http://w3id.org/s3n/Parameter">
+        <rdfs:label>Parameter</rdfs:label>
+        <skos:definition>A parameter can be any characteristic serving as pre or post condition of an algorithm or its operations.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/s3n/S3NAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/PostCondition -->
+
+    <owl:Class rdf:about="http://w3id.org/s3n/PostCondition">
+        <rdfs:label>Post-Condition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/s3n/Parameter"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/s3n/PreCondition"/>
+        <skos:definition>A postcondition is a predicate describing the final state of the desired result (after execution).</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/s3n/S3NAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/PreCondition -->
+
+    <owl:Class rdf:about="http://w3id.org/s3n/PreCondition">
+        <rdfs:label>Pre-Condition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/s3n/Parameter"/>
+        <skos:definition>A pre-condition is a predicate describing the initial state, inputs (before execution)</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/s3n/S3NAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/SequenceNumber -->
+
+    <owl:Class rdf:about="http://w3id.org/s3n/SequenceNumber">
+        <rdfs:label>Sequence Number</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/s3n/forAlgorithm"/>
+                <owl:onClass rdf:resource="http://w3id.org/s3n/Algorithm"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/s3n/ofOperation"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/s3n/Operation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/s3n/forAlgorithm"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/s3n/Algorithm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>It is a number used to indicate a place of something in a series.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/s3n/S3NAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/Snippet -->
+
+    <owl:Class rdf:about="http://w3id.org/s3n/Snippet">
+        <rdfs:label>Snippet</rdfs:label>
+        <rdfs:label rdf:resource="http://w3id.org/s3n/S3NAlgorithm"/>
+        <skos:definition>A snippet is a part of a computer program, having a purpose that of the operation it implements.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="&time;TemporalEntity"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="&foaf;Agent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/s3n/S3NAlgorithm -->
+
+    <owl:NamedIndividual rdf:about="&s3n;S3NAlgorithm">
+        <rdf:type rdf:resource="&voaf;Vocabulary"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

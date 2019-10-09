@@ -1,0 +1,555 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY schema "http://schema.org/" >
+    <!ENTITY s3n "http://w3id.org/s3n/" >
+    <!ENTITY ssn "http://www.w3.org/ns/ssn/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY sosa "http://www.w3.org/ns/sosa/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY time "http://www.w3.org/2006/time#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY voaf "http://purl.org/vocommons/voaf#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&s3n;S3NCore#"
+     xml:base="&s3n;S3NCore"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:ssn="http://www.w3.org/ns/ssn/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:sosa="http://www.w3.org/ns/sosa/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:s3n="http://w3id.org/s3n/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="&s3n;S3NCore">
+        <dcterms:created rdf:datatype="&xsd;date">2018</dcterms:created>
+        <vann:preferredNamespacePrefix>s3n</vann:preferredNamespacePrefix>
+        <dcterms:creator>SAGAR Samya -  Lab-STICC (imt-atlantique)</dcterms:creator>
+        <dcterms:title xml:lang="en">Semantic Smart Sensor Network (S3N) Ontology: Core Module</dcterms:title>
+        <dcterms:description xml:lang="en">This ontology extends the OGC/W3C SOSA/SSN ontology to describe Smart Sensors.</dcterms:description>
+        <vann:preferredNamespaceUri>http://w3id.org/s3n/</vann:preferredNamespaceUri>
+        <owl:imports rdf:resource="&s3n;S3NAlgorithm"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <dcterms:license rdf:resource="https://www.apache.org/licenses/LICENSE-2.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+    <owl:AnnotationProperty rdf:about="&schema;domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+    <owl:AnnotationProperty rdf:about="&schema;rangeIncludes"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="&skos;definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="&skos;example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="&skos;note"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="&foaf;name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/s3n/calculatedProperty -->
+
+    <owl:ObjectProperty rdf:about="&s3n;calculatedProperty">
+        <rdfs:label>calculated property</rdfs:label>
+        <skos:definition>Relation linking an AlgorithmExecution to the property that was calculated. The ComputableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this AlgorithmExecution.</skos:definition>
+        <schema:domainIncludes rdf:resource="&s3n;AlgorithmExecution"/>
+        <schema:rangeIncludes rdf:resource="&s3n;ComputableProperty"/>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NCore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/calculates -->
+
+    <owl:ObjectProperty rdf:about="&s3n;calculates">
+        <rdfs:label>calculates</rdfs:label>
+        <skos:definition>Relation between a  Micro-Controller and an ComputableProperty that it is able to calculate.</skos:definition>
+        <schema:rangeIncludes rdf:resource="&s3n;ComputableProperty"/>
+        <schema:domainIncludes rdf:resource="&s3n;MicroController"/>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NCore"/>
+        <owl:inverseOf rdf:resource="&s3n;isCalculatedBy"/>
+        <rdfs:subPropertyOf rdf:resource="&ssn;forProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/cause -->
+
+    <owl:ObjectProperty rdf:about="&s3n;cause">
+        <rdfs:label xml:lang="en">cause</rdfs:label>
+        <skos:definition xml:lang="en">The cause of an Error.</skos:definition>
+        <schema:domainIncludes rdf:resource="&s3n;Error"/>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NCore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/forContext -->
+
+    <owl:ObjectProperty rdf:about="&s3n;forContext">
+        <rdfs:label xml:lang="en">for context</rdfs:label>
+        <skos:definition xml:lang="en">The context of use of an algorithm.</skos:definition>
+        <schema:domainIncludes rdf:resource="&s3n;Algorithm"/>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NCore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/isCalculatedBy -->
+
+    <owl:ObjectProperty rdf:about="&s3n;isCalculatedBy">
+        <rdfs:label>is calculated by</rdfs:label>
+        <skos:definition>Relation between an ComputableProperty and the Micro-Controller able to calculate it</skos:definition>
+        <schema:domainIncludes rdf:resource="&s3n;ComputableProperty"/>
+        <schema:rangeIncludes rdf:resource="&s3n;MicroController"/>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NCore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/s3n/madeAlgorithmExecution -->
+
+    <owl:ObjectProperty rdf:about="&s3n;madeAlgorithmExecution">
+        <rdfs:label xml:lang="en">made algorithm execution</rdfs:label>
+        <skos:definition xml:lang="en">Relation between a MicroController and an AlgorithmExecution it made.</skos:definition>
+        <schema:rangeIncludes rdf:resource="&s3n;AlgorithmExecution"/>
+        <schema:domainIncludes rdf:resource="&s3n;MicroController"/>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NCore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/hasFeatureOfInterest -->
+
+    <rdf:Description rdf:about="&sosa;hasFeatureOfInterest">
+        <schema:domainIncludes rdf:resource="&s3n;AlgorithmExecution"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/hasResult -->
+
+    <rdf:Description rdf:about="&sosa;hasResult">
+        <schema:domainIncludes rdf:resource="&s3n;AlgorithmExecution"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/hosts -->
+
+    <owl:ObjectProperty rdf:about="&sosa;hosts">
+        <schema:rangeIncludes rdf:resource="&s3n;CommunicatingSystem"/>
+        <schema:rangeIncludes rdf:resource="&s3n;MicroController"/>
+        <schema:rangeIncludes rdf:resource="&s3n;SmartSensor"/>
+        <schema:domainIncludes rdf:resource="&s3n;SmartSensor"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/usedProcedure -->
+
+    <rdf:Description rdf:about="&sosa;usedProcedure">
+        <schema:rangeIncludes rdf:resource="&s3n;Algorithm"/>
+        <schema:domainIncludes rdf:resource="&s3n;AlgorithmExecution"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <schema:domainIncludes rdf:resource="&sosa;Observation"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/resultTime -->
+
+    <rdf:Description rdf:about="&sosa;resultTime">
+        <schema:domainIncludes rdf:resource="&s3n;AlgorithmExecution"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+    <owl:Class rdf:about="&voaf;Vocabulary"/>
+    
+
+
+    <!-- http://w3id.org/s3n/Algorithm -->
+
+    <owl:Class rdf:about="&s3n;Algorithm">
+        <rdfs:subClassOf rdf:resource="&sosa;Procedure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/AlgorithmExecution -->
+
+    <owl:Class rdf:about="&s3n;AlgorithmExecution">
+        <rdfs:label xml:lang="en">Algorithm Execution</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sosa;usedProcedure"/>
+                <owl:allValuesFrom rdf:resource="&s3n;Algorithm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sosa;hasResult"/>
+                <owl:allValuesFrom rdf:resource="&sosa;Result"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sosa;resultTime"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sosa;hasFeatureOfInterest"/>
+                <owl:allValuesFrom rdf:resource="&sosa;FeatureOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;calculatedProperty"/>
+                <owl:allValuesFrom rdf:resource="&s3n;ComputableProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sosa;hasFeatureOfInterest"/>
+                <owl:onClass rdf:resource="&sosa;FeatureOfInterest"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&sosa;hasResult"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition xml:lang="en">Act of executing an algorithm.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NCore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/CommunicatingSystem -->
+
+    <owl:Class rdf:about="&s3n;CommunicatingSystem">
+        <rdfs:label xml:lang="en">Communicating System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ssn;System"/>
+        <skos:definition xml:lang="en">A CommunicatingSystem can be used to exchange information with other CommunicatingSystem on some network.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NCore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/ComputableProperty -->
+
+    <owl:Class rdf:about="&s3n;ComputableProperty">
+        <rdfs:label>Computable Property</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ssn;Property"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="&s3n;calculatedProperty"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom rdf:resource="&s3n;AlgorithmExecution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;isCalculatedBy"/>
+                <owl:allValuesFrom rdf:resource="&s3n;MicroController"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>It is a computable property. A specific property having a specific use in a specific domain.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NCore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/Error -->
+
+    <owl:Class rdf:about="&s3n;Error">
+        <rdfs:label xml:lang="en">Error</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&sosa;Result"/>
+        <skos:definition xml:lang="en">A specific result that is an error. May be further described in terms of its cause.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NCore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/MicroController -->
+
+    <owl:Class rdf:about="&s3n;MicroController">
+        <rdfs:label xml:lang="en">Micro-Controller</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ssn;System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;calculates"/>
+                <owl:allValuesFrom rdf:resource="&s3n;ComputableProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ssn;implements"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ssn;implements"/>
+                <owl:allValuesFrom rdf:resource="&s3n;Algorithm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&s3n;madeAlgorithmExecution"/>
+                <owl:allValuesFrom rdf:resource="&s3n;AlgorithmExecution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition xml:lang="en">A MicroController is a compact integrated circuit containing a processor, some memory, and input/output (I/O) peripherals on a single chip, and is designed to govern a specific operation in an embedded system. It implements some Procedures, and makes ProcedureExecutions.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NCore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/Operation -->
+
+    <owl:Class rdf:about="&s3n;Operation">
+        <rdfs:subClassOf rdf:resource="&sosa;Procedure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/SmartSensor -->
+
+    <owl:Class rdf:about="&s3n;SmartSensor">
+        <rdfs:label xml:lang="en">Smart-Sensor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&sosa;Platform"/>
+        <rdfs:subClassOf rdf:resource="&ssn;System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ssn;hasSubSystem"/>
+                <owl:someValuesFrom rdf:resource="&s3n;CommunicatingSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ssn;hasSubSystem"/>
+                <owl:someValuesFrom rdf:resource="&sosa;Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ssn;hasSubSystem"/>
+                <owl:someValuesFrom rdf:resource="&s3n;MicroController"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition xml:lang="en">A SmartSensor is composed of one or more Sensors together with a MicroController that implements different Procedures, and make Executions of these Procedures on the result of the Observations these Sensors make to output a resulting value for some Indicator. This value may then be communicated by some CommunicatingSystem.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="&s3n;S3NCore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/s3n/Snippet -->
+
+    <owl:Class rdf:about="&s3n;Snippet">
+        <rdfs:subClassOf rdf:resource="&sosa;Procedure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="&time;TemporalEntity"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="&foaf;Agent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/s3n/S3NCore -->
+
+    <owl:NamedIndividual rdf:about="&s3n;S3NCore">
+        <rdf:type rdf:resource="&voaf;Vocabulary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&sosa;isFeatureOfInterestOf">
+        <schema:rangeIncludes rdf:resource="&s3n;AlgorithmExecution"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&sosa;hasSimpleResult">
+        <schema:domainIncludes rdf:resource="&s3n;AlgorithmExecution"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&sosa;isResultOf">
+        <schema:rangeIncludes rdf:resource="&s3n;AlgorithmExecution"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&sosa;isHostedBy">
+        <schema:domainIncludes rdf:resource="&s3n;CommunicatingSystem"/>
+        <schema:domainIncludes rdf:resource="&s3n;MicroController"/>
+        <schema:domainIncludes rdf:resource="&s3n;SmartSensor"/>
+        <schema:rangeIncludes rdf:resource="&s3n;SmartSensor"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
